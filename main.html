@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="select.css">
+    <script src="main.js" type="module"></script>
+</head>
+<style>
+</style>
+
+<body>
+    <div class="container">
+        <div class="mainWindow">
+            <div class="titleBar">
+                <div class="TBexit"></div>
+                <div class="TBminimize"></div>
+                <div class="TBexpand"></div>
+            </div>
+            <div class="topOptions">
+                <div class="trackingBtn">Tracking</div>
+                <div class="welcomeLbl">Welcome LGNDS</div>
+                <div class="logoutBtn" onclick="location.href='login.html'">Logout</div>
+            </div>
+            <div class="accountsContainer">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Account</th>
+                        <th>Url</th>
+                        <th>Side</th>
+                        <th>Status</th>
+                        <th>Features</th>
+                        <th>Server</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./Assets/xmark.png" alt="xmark">
+                        </td>
+                        <td>Chick-Fil-A</td>
+                        <td>
+                            <div class="urlContainer">
+                                <div class="urlLbl">#/battle=2aaaaabaf31da6b4</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="accSideLbl blue">Alpha</div>
+                        </td>
+                        <td>
+                            <div id="accStatusLbl">Clicking</div>
+                        </td>
+                        <td>
+                            <img src="./Assets/Bug.png" alt="bugIcon">
+                        </td>
+                        <td>
+                            <img src="./Assets/Mars.png" alt="serverIcon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./Assets/xmark.png" alt="xmark">
+                        </td>
+                        <td>Dennis</td>
+                        <td>
+                            <div class="urlContainer">
+                                <div class="urlLbl">#/battle=2aaaaabaf31da6b4</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="accSideLbl red">Bravo</div>
+                        </td>
+                        <td>
+                            <div id="accStatusLbl" class="glitchedLbl">Glitched</div>
+                        </td>
+                        <td>
+                            <div class="unglitchBtn">Unglitch</div>
+                        </td>
+                        <td>
+                            <img src="./Assets/Pluto.png" alt="serverIcon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./Assets/xmark.png" alt="xmark">
+                        </td>
+                        <td>QC_PASS</td>
+                        <td>
+                            <div class="urlContainer">
+                                <div class="urlLbl">#/battle=2aaaaabaf31da6b4</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="accSideLbl red">Bravo</div>
+                        </td>
+                        <td>
+                            <div id="accStatusLbl" class="refreshingLbl">Refreshing</div>
+                        </td>
+                        <td>
+                            <img src="./Assets/refreshing.png" alt="refreshingIcon">
+                        </td>
+                        <td>
+                            <img src="./Assets/Moon.png" alt="serverIcon">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mainControlsContainer">
+                <div class="leftSideContainer">
+                    <div class="label accountsToClickLbl">Accounts to Click</div>
+                    <select name="Mains" data-custom>
+                        <option value="dennis">Dennis</option>
+                        <option value="chick-fil-a">Chick-Fil-A</option>
+                        <option value="qc_pass">QC_PASS</option>
+                        <option value="eddie">Eddie</option>
+                        <option value="dark">Dark</option>
+                        <option value="yyy">yyy</option>
+                        <option value="emree">Emree</option>
+                        <option value="sss">sss</option>
+                        <option value="vikk">Vikk</option>
+                        <option value="dominate">Dominate</option>
+                        <option value="wavelength">Wavelength</option>
+                        <option value="trunks">Trunks</option>
+                        <option value="forgiveness">Forgiveness</option>
+                        <option value="dance">Dance</option>
+                        <option value="quello">Quello</option>
+                        <option value="scale">Scale</option>
+                    </select>
+                </div>
+                <div class="middleContainer">
+                    <div class="label accountsToClickLbl"></div>
+                    <select name="Mults" data-custom>
+                        <option value="cashout">CashOut</option>
+                        <option value="dosa">Dosa</option>
+                        <option value="boss">Boss</option>
+                        <option value="daddy">Daddy</option>
+                        <option value="agent">Agent</option>
+                        <option value="unbeatable">Unbeatable</option>
+                        <option value="Swervin">Swervin</option>
+                        <option value="razzle">Razzle</option>
+                        <option value="emperor">Emperor</option>
+                        <option value="martsy">Martsy</option>
+                        <option value="momoox">Momoox</option>
+                        <option value="ruh">Ruh</option>
+                    </select>
+                </div>
+                <div class="rightSideContainer">
+                    <div class="label battlesUrlLbl">Battle URL</div>
+                    <input type="text" class="battleUrlInput" placeholder="#/battle=2aaaaabaf31da6b4">
+                    <div class="clickBtnsContainer">
+                        <div class="clickBtn alpha">Team Alpha</div>
+                        <div class="clickBtn bravo">Team Bravo</div>
+                    </div>
+                    <div class="addAccountContainer">
+                        <div class="addAccountBtn">Add Account</div>
+                    </div>
+                    <div class="insideStatusContainer">
+                        <div class="statusLbl">Status:
+                            <div class="statusIndicator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

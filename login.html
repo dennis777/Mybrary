@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Clicker</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+</style>
+
+<body>
+    <div class="container">
+        <div class="loginWindow">
+            <div class="titleBar">
+                <div class="TBexit"></div>
+                <div class="TBminimize"></div>
+                <div class="TBexpand"></div>
+            </div>
+            <div class="innerContainer">
+                <div class="label">Username:</div>
+                <input type="text" id="username" class="inputField">
+                <div class="label">Password:</div>
+                <input type="password" id="password" class="inputField">
+                <div></div>
+                <div class="loginBtn" onclick="location.href='main.html'">Login</div>
+                <div class="statusContainer">
+                    <div class="statusLbl">Status:
+                        <div class="statusIndicator"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="outerContainer">
+                <div class="label" style="font-size: small; font-weight: bold;">Made with 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

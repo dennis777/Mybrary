@@ -1,0 +1,555 @@
+* {
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(34, 40, 64);
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.innerContainer {
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.outerContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: -25px;
+}
+
+.statusContainer {
+    height: 100%;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 192px;
+}
+
+.loginWindow {
+    width: 320px;
+    height: 425px;
+    background-color: rgb(19, 22, 51);
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.titleBar {
+    position: relative;
+    min-width: 100%;
+    height: 36px;
+    background-color: rgb(53, 58, 63);
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.TBexit {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(251, 67, 50);
+    margin-left: 15px;
+    border-radius: 100%;
+}
+
+.TBminimize {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(244, 176, 39);
+    margin-left: 7px;
+    border-radius: 100%;
+}
+
+.TBexpand {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(77, 189, 71);
+    margin-left: 7px;
+    border-radius: 100%;
+}
+
+.label {
+    font-family: Helvetica;
+    font-weight: light;
+    font-size: larger;
+    color: white;
+    margin-top: 30px;
+    margin-left: 3px;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.inputField {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: large;
+    height: 40px;
+    width: 245px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+#username {
+    text-transform: uppercase;
+}
+
+#password {
+    font-size: small;
+}
+
+.loginBtn {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: rgb(69, 134, 254);
+    border: 1px solid rgb(69, 134, 254);
+    background-color: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.loginBtn:hover {
+    color:rgb(19, 22, 51);
+    background-color: rgb(69, 134, 254);
+}
+
+.statusLbl {
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: normal;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.statusIndicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(251, 67, 50);
+    margin-left: 15px;
+    border-radius: 100%;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* MAIN WINDOW */
+
+.mainWindow {
+    width: 1000px;
+    height: 565px;
+    background-color: rgb(19, 22, 51);
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.topOptions {
+    margin-top: 15px;
+    margin-left: 25px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+}
+
+.accountsContainer {
+    margin-top: 15px;
+    margin-left: 25px;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.trackingBtn {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    color: rgb(75, 160, 181);
+    border: 1px solid rgb(75, 160, 181);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.trackingBtn:hover {
+    color: rgb(19, 22, 51);
+    background-color: rgb(75, 160, 181);
+}
+
+.welcomeLbl {
+    width: 160px;
+    height: 40px;
+    font-family: Helvetica;
+    font-weight: light;
+    font-size: large;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 535px;
+    margin-right: 10px;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.logoutBtn {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    color: rgb(203, 68, 74);
+    border: 1px solid rgb(203, 68, 74);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.logoutBtn:hover {
+    color:rgb(19, 22, 51);
+    background-color: rgb(203, 68, 74);
+}
+
+.runningAccounts {
+    color: rgb(21, 19, 16);
+}
+
+table {
+    font-family: Helvetica;
+    font-weight: bold;
+    width: 950px;
+    border: none;
+    border-collapse: collapse;
+    cursor: default;
+}
+
+th, td, tr {
+    text-align: center;
+    color: white;
+}
+
+th, td {
+    padding: 8px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(55, 55, 55);
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child { 
+    border-bottom-left-radius: 10px; 
+}
+
+tr:last-child td:last-child { 
+    border-bottom-right-radius: 10px; 
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(30, 30, 30);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(37, 37, 37);
+}
+
+/* tr:hover {
+    background-color: rgb(166, 165, 165);
+} */
+
+tr:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+img[alt~="xmark"] {
+    height: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.urlContainer {
+    width: 178px;
+    background-color: rgb(111, 117, 124);
+    border-radius: 5px;
+    padding: 2px;
+    margin: auto;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.urlLbl {
+    font-size: smaller;
+}
+
+.accSideLbl {
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.accSideLbl.red {
+    color: rgb(223, 50, 58);
+}
+
+.accSideLbl.blue {
+    color: rgb(69, 134, 254);
+}
+
+#accStatusLbl {
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.glitchedLbl {
+    color: rgb(109, 206, 233);
+}
+
+.refreshingLbl {
+    color: rgb(47, 193, 81);
+}
+
+img[alt~="bugIcon"] {
+    height: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img[alt~="refreshingIcon"] {
+    height: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.unglitchBtn {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15px;
+    width: 110px;
+    height: 35px;
+    margin: auto;
+    text-transform: uppercase;
+    color:white;
+    background-color: rgb(203, 68, 74);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.unglitchBtn:hover {
+    background-color: rgb(234, 96, 102);
+}
+
+img[alt~="serverIcon"] {
+    height: 35px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.mainControlsContainer {
+    margin-top: -10px;
+    margin-left: 25px;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.accountsToClickLbl {
+    font-size: 16px;
+    font-weight: bold;
+    width: 320px;
+    height: 18px;
+}
+
+.battlesUrlLbl {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.battleUrlInput {
+    font-size: 15px;
+    font-weight: light;
+    width: 290px;
+    height: 35px;
+    margin-top: 10px;
+    padding-left: 10px;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.clickBtnsContainer {
+    margin-top: 10px;
+    display: flex;
+}
+
+.clickBtn {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15px;
+    width: 145px;
+    height: 35px;
+    margin: auto;
+    text-transform: uppercase;
+    color:white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.clickBtn.alpha {
+    background-color: rgb(69, 134, 254);
+    margin-right: 5px;
+}
+
+.clickBtn.bravo {
+    background-color: rgb(223, 50, 58);
+    margin-left: 5px;
+}
+
+.clickBtn.alpha:hover {
+    background-color: rgb(109, 160, 253);
+}
+
+.clickBtn.bravo:hover {
+    background-color: rgb(234, 96, 102);
+}
+
+.addAccountContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+    justify-items: right;
+}
+
+.addAccountBtn {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 16px;
+    width: 150px;
+    height: 35px;
+    text-transform: uppercase;
+    color: rgb(255, 200, 73);
+    border: 1px solid rgb(255, 200, 73);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.addAccountBtn:hover {
+    color: rgb(19, 22, 51);
+    background-color: rgb(255, 200, 73);
+}
+
+.insideStatusContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: right;
+}
